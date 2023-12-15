@@ -1,0 +1,181 @@
+
+
+@media (max-width: 768px) {
+  .popular
+  {
+    display: grid;
+    grid-template-areas:
+    ". label ."
+    "books books books";
+  }
+  .sales
+  {
+    display: grid;
+    grid-template-areas:
+    ". label2 ."
+    "books2 books2 books2";
+  }
+  .popular article
+  {
+    position:relative;
+    margin-left: 0;
+  }
+  .sales article
+  {
+    overflow-y:hidden;
+  }
+  .salebooks
+  {
+      left: 0;
+  }
+  .menu-wrap
+  {
+    height: 5em;
+    width: 400px;
+  }
+  /* Общий стиль для бургер-меню и скрытие навигации по умолчанию */
+  .menu-wrap nav {
+    display: none;
+    transition: display 0.5s ease; /* Добавляем плавный переход с эффектом ease */
+  }
+
+  /* Отображение навигации при активном чекбоксе */
+  .menu-wrap input:checked + nav {
+    display: block;
+    background-color: black; /* Черный фон */
+    position: absolute;
+    top: 17px; /* Выберите нужное значение в зависимости от вашего дизайна */
+
+    width: 415px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: display 0.5s ease; /* Добавляем плавный переход с эффектом ease */
+  }
+
+  /* Стилизация элементов меню */
+  .menu-wrap nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 0; /* Убираем верхний отступ */
+  }
+
+  .menu-wrap nav li {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .menu-wrap nav a {
+    text-decoration: none;
+    color: white; /* Белый цвет текста */
+  }
+
+  /* Иконка бургера */
+  .menu-icon {
+    cursor: pointer;
+    color: white; /* Белый цвет иконки */
+  }
+
+  /* Скрытие чекбокса */
+  #checkbox {
+    display: none;
+  }
+
+  #menutop {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .popular
+  {
+    gap: 3em;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  #menutop li, #bskhrt
+  {
+    width: 400px;
+  }
+  .bsk
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .new h2
+  {
+    position: relative;
+    left: 2.5em;
+  }
+  /*
+  .newbooks
+  {
+    overflow: scroll;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -4em;
+  }*/
+
+  .box, .box2
+  {
+    display: none;
+  }
+  /*
+  .popular h2
+  {
+    position: relative;
+    left: 2em;
+  }/*
+  .popularbooks
+  {
+    position: relative;
+    width: 100%;
+    left: -19em;
+    margin-bottom: 2em;
+  }
+*/
+  .sales h2
+  {
+    left: 2.5em;
+  }
+
+  .salebooks
+  {
+    position: relative;
+    width: 100%;
+    right: 15em;
+    margin-bottom: 5em;
+  }
+  .salebooks li
+  {
+    position: relative;
+    left: 3em;
+  }
+
+  .native h2
+  {
+    position: relative;
+    left: 0.25em;
+  }
+  .nativebooks
+  {
+    overflow: scroll;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: center;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+  }

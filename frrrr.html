@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .card-container {
+      display: flex;
+    }
+
+    .card {
+      width: 150px;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      filter: brightness(1.5);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card:not(:hover) {
+      filter: brightness(0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('rem.jpg'); /* Замените 'your-image-url.jpg' на ссылку на вашу картинку*/
+  background-size: cover;
+  font-family: 'Croissant One', sans-serif;
+  overflow: hidden; /* Чтобы избежать прокрутки при размытии */
+}
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('rem.jpg');
+  background-size: cover;
+  filter: blur(5px); /* Изначально без размытия */
+  transition: filter 0.3s ease-in-out; /* Анимация для плавного перехода размытия */
+  z-index: -2; /* Чтобы не перекрывать контент */
+}
+
+
+fieldset
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 20em;
+  height: 20em;
+  border: 2px solid #000; /* черная рамка */
+  border-radius: 10px;
+  background-color: #fff; /* белый цвет фона */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* тень */
+  transition: transform 0.3s ease-in-out; /* анимация для fieldset */
+  overflow: hidden; /* скрываем выход за границы рамки */
+}
+fieldset:hover body:before {
+  filter: blur(5px); /* Измените значение по желанию для управления степенью размытия */
+  z-index: 2;
+}
+
+fieldset:hover
+{
+  transform: scale(1.05); /* увеличение размера при наведении курсора */
+  z-index: 3;
+}
+
+legend
+{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center; /* выравнивание по центру */
+}
+
+#form1
+{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+}
+
+label
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  color: #000; /* черный цвет текста */
+}
+
+input
+{
+  padding: 0.5em;
+  border: 2px solid #000; /* черная рамка */
+
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out; /* анимация для input */
+}
+input[type="tel"] {
+  padding: 0.5em;
+  border: 2px solid #000;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="tel"]:focus {
+  border-color: rgba(235,220,81,255);
+}
+
+input[type="tel"]::placeholder {
+  color: #666; /* Цвет placeholder */
+}
+
+
+input:focus
+{
+  border-color: rgba(235,220,81,255); /* желтая рамка при фокусе */
+}
+
+button
+{
+  z-index: 2;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #000; /* черный цвет кнопки */
+  color: #fff; /* белый цвет текста на кнопке */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* анимация для button */
+}
+
+button:hover
+{
+  background-color: rgba(235,220,81,255); /* желтый цвет кнопки при наведении курсора */
+}
+
+.cube-container
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.cube
+{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #000; /* черный цвет куба */
+}
+
+.cube.yellow
+{
+  background-color:rgba(235,220,81,255); /* желтый цвет куба */
+}
+
+.cube.white
+{
+  background-color: rgba(235,220,81,255); /* белый цвет куба */
+}
+
+.cube.left-top
+{
+  position: absolute;
+  top: 7em;
+  left: 18em;
+  animation: moveCubeTop 2s infinite alternate;
+}
+
+.cube.right-center
+{
+  position: absolute;
+  top: 2em;
+  left: -2em;
+  animation: moveCubeRight 2s infinite alternate;
+}
+
+.cube.bottom
+{
+  position: absolute;
+  bottom: -2.7em;
+  right: 8em;
+  animation: moveCubeBottom 2s infinite alternate;
+}
+
+@keyframes moveCubeTop
+{
+  to {
+    transform: translateY(20px); /* движение вниз */
+  }
+}
+
+@keyframes moveCubeRight
+{
+  to {
+    transform: translateX(20px); /* движение вправо */
+  }
+}
+
+@keyframes moveCubeBottom
+{
+  to {
+    transform: translateY(-20px); /* движение вверх */
+  }
+}

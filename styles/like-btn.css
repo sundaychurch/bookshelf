@@ -1,0 +1,16 @@
+.like-btn
+{
+  display: flex;
+  position: relative;
+}
+
+.like-btn img
+{
+  width: 2em;
+  height: 2em;
+}
+
+#likeButton
+{
+    background-color: grey;
+}

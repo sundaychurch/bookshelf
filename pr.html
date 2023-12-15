@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bookshelf</title>
+    <link rel="shortcut icon" href="bookicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/pr.css"> 
+  </head>
+  <body>
+    <script src="scripts/pikcha.js"></script>
+    <script src="scripts/script.js"></script>
+    <section>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="color"></div>
+      <div class="box">
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+        <div class="container">
+          <div class="form">
+            <h2>Регистрация</h2>
+            <form>
+              <div class="inputBox">
+                <input type="text" placeholder="Имя пользователя">
+
+              </div>
+              <div class="inputBox">
+                <input type="password" placeholder="Пароль">
+              </div>
+              <div class="inputBox">
+                <input type="submit" id = "login" onclick="checkRegistration()" value="Войти">
+              </div>
+              <p class="forget">Забыли пароль ?<a href="#">Нажмите</a></p>
+              <p class="forget">Нет аккаунта ? <a href="#">Зарегистрироваться</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

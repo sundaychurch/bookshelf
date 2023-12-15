@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body
+{
+
+  width: 100%;
+}
+
+/* Шапка страницы */
+header
+{
+  font-family:'Croissant One', cursive;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  background-size: auto;
+  background-color: black;
+  padding: 15px auto 15px auto;
+  margin-bottom: 15px;
+  z-index: 1;
+  width: 100%;
+}
+header a, header a:visited, header a:active
+{
+  text-decoration: none;
+  color: white;
+}
+header a:hover
+{
+  color: rgba(152,152,152,255);
+}
+header input
+{
+  opacity: 0;
+}
+#menutop
+{
+  font-size: medium;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 5%;
+  justify-content: center;
+  list-style: none;
+}
+#menutop li
+{
+  padding: 15px;
+}
+#bskhrt {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5em; /* Расстояние между элементами bskhrt */
+  align-items: center; /* Выравнивание по центру по вертикали */
+}
+#bskhrt li {
+  margin: 0;
+  padding: 0;
+}
+#bskhrt a img {
+  width: 2.6rem; /* Увеличенная ширина картинок */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+#bskhrt a:hover img {
+  transform: scale(1.2); /* Увеличение размера при наведении */
+}
+.bsk
+{
+  display: inline-flex;
+  gap: 2em;
+}
+/* Главная информация */
+main
+{
+  overflow-x: hidden;
+  width: 100%;
+}
+main ul
+{
+  list-style-type: none;
+}
+
+
+.container
+{
+  position: relative;
+  left: 2em;
+}
+.container img
+{
+  width: 563.3px;
+  height: 43.75em;
+  border-radius: 15px;
+
+}
+.box
+{
+  width: 563.3px;
+  height: 700px;
+  position: relative;/*
+  top: 5em;
+  left: -18em;*/
+}
+.box .square
+{
+  position:absolute;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+
+  background: black;/*rgba(255,255,255,0.1);*/
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+}
+@keyframes animate
+{
+  0%, 100%
+  {
+    transform: translateY(-40px);
+  }
+  50%
+  {
+    transform: translateY(40px);
+  }
+}
+.box .square:nth-child(1)
+{
+  top: -42px;
+  left: 450px;
+  width: 6.25em;
+  height: 6.25em;
+
+}
+.box .square:nth-child(2)
+{
+  top: 150px;
+  left: -10px;
+  width: 6.875em;
+  height: 6.875em;
+  z-index: 2;
+  background-color: rgba(235,220,81,255);
+}
+
+.popular article::-webkit-scrollbar {
+  width: 10px;
+}
+
+.popular article::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+.popular article::-webkit-scrollbar-thumb {
+  background-color: /*#356184;*/rgba(235,220,81,255);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                    color-stop(.5,white /*rgba(255, 255, 255, .25)*/),
+                    color-stop(.5, transparent), to(transparent));
+}
+.sales article::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sales article::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+.sales article::-webkit-scrollbar-thumb {
+  background-color: /*#356184;*//*rgba(235,220,81,255);*/black;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                    color-stop(.5,white /*rgba(255, 255, 255, .25)*/),
+                    color-stop(.5, transparent), to(transparent));
+}
+
+.box .square:nth-child(3)
+{
+  bottom: 20px;
+  left: 505px;
+  width: 6.875em;
+  height: 6.875em;
+  z-index: 2;
+  background-color: white;
+}
+.container2
+{
+  position: relative;
+}
+.container2 img
+{
+  position: relative;
+  width: 563.3px;
+  height: 43.75em;
+  border-radius: 15px;
+  right: 6em;
+}
+.box2
+{
+  grid-area: image2;
+  width: 563.3px;
+  height: 43.75em;
+  position: relative;/*
+  top: 5em;
+  right: -58%;*/
+}
+.box2 .square
+{
+  position:absolute;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+
+  background: black;/*rgba(255,255,255,0.1);*/
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+}
+.box2 .square:nth-child(1)
+{
+  top: -6%;
+  left: -5%;
+  width: 6.25em;
+  height: 6.25em;
+  background-color: rgba(235,220,81,255)
+}
+.box2 .square:nth-child(2)
+{
+  top: 30%;
+  left: 68%;
+  width: 6.875em;
+  height: 6.875em;
+  z-index: 2;
+}
+.box2 .square:nth-child(3)
+{
+  bottom: 2%;
+  left: -25%;
+  width: 6.875em;
+  height: 6.875em;
+  z-index: 2;
+  background-color: white;
+}
+
+/* Размеры книг */
+.newbooks img, .popularbooks img, .salebooks img, .nativebooks img
+{
+  width: 236px;
+  height: 354px;
+}
+ /* Раздел с новинками */
+.new
+{
+  gap: 3em;
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.newbooks
+{
+    overflow-x: auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  top: 5px;
+  left: 4px;
+  gap: 30px;
+}
+.new article
+{
+  background-color: rgba(235,220,81,255);
+  padding-bottom: 4em;
+}
+.newbooks li
+{
+  align-self: flex-start;
+  flex-basis: content;
+}
+.newbooks li .colornew
+{
+  border: 30px solid white;
+  border-left: 10px;
+  border-top: 0;
+}
+.newbooks li a
+{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+.newbooks li img
+{
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+.newbooks a
+{
+  text-decoration: none;
+}
+.newbooks a figcaption
+{
+  color: black;
+  font-family: 'Croissant One', cursive;
+  font-size: 1.5em;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.newbooks li:hover img {
+  transform: scale(1.1);
+}
+.newbooks figcaption p:nth-of-type(1)
+{
+  color: black;
+  opacity: 0;
+}
+.newbooks a:hover figcaption p:nth-of-type(1)
+{
+  opacity:1;
+}
+.newbooks a:hover figcaption p:nth-of-type(2)
+{
+  color: white;
+}
+.newbooks li:hover img
+{
+  transform: scale(1.1);
+}
+
+/* Раздел с популярной литературой */
+/*
+.popular
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  gap: 100px;
+}*/
+.popular
+{
+  display: grid;
+  grid-template-areas:
+  ". label ."
+  "image books books"
+}
+.popular h2
+{
+  grid-area: label;
+}
+.popular .box
+{
+  grid-area: image;
+}
+.popular article
+{
+  grid-area: books;
+}
+
+.popular article
+{
+
+  background-color: rgba(235,220,81,255);
+  padding-bottom: 4em;
+ position: relative;
+  top: 4em;
+   right: 0;
+padding-left: 2em;
+  height: 600px;
+  margin-left: 2rem;
+  overflow-x: scroll;
+  border-radius: 15px;
+  width: 100%;
+}
+.popular h2
+{
+  /*
+  position: relative;
+  left: 17em;*/
+  bottom: -0.80em;
+}
+.popularbooks
+{
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  top: 4em;
+  gap: 1.5em;
+}
+.popularbooks li
+{
+
+
+  align-self: flex-start;
+  flex-basis: content;
+}
+.popularbooks li .colorpop
+{
+    border: 30px solid black;
+  border-left: 10px;
+  border-top: 0;
+}
+.popularbooks a
+{
+  text-decoration: none;
+}
+.popularbooks a figcaption
+{
+  color: black;
+  font-family: 'Croissant One', cursive;
+  font-size: 1.5em;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.popularbooks figcaption p:nth-of-type(1)
+{
+  color: black;
+  opacity: 0;
+}
+.popularbooks a:hover figcaption p:nth-of-type(1)
+{
+  opacity:1;
+}
+.popularbooks a:hover figcaption p:nth-of-type(2)
+{
+  color: white;
+}
+.popularbooks li a
+{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+.popularbooks li img
+{
+  transform: scale(1.08);
+}
+.popularbooks li:hover img
+{
+  transform: scale(1.1);
+}
+
+/* Раздел со скидками */
+.sales
+{
+  display: grid;
+  grid-template-areas:
+  ". label2 ."
+  "books2 books2 image2";
+  gap:6em;
+  /*width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  gap: 100px;*/
+}
+.sales article
+{
+  grid-area: books2;
+  background-color: black;
+  padding-bottom: 4em;
+  padding-left: 2em;
+  position: relative;
+  top: 4em;
+  right: 10em;
+  margin-left: 10em;
+  /*left: -22.25em*/;
+  height: 600px;
+  overflow-x: scroll;
+  border-radius: 15px;
+  width: 100%;
+
+}
+.sales h2
+{
+  grid-area: label2;
+  /*
+  position: relative;
+  left: 17em;*/
+  bottom: -0.80em;
+}
+.salebooks
+{
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  top: 4em;
+  gap: 1.5em;
+}
+.salebooks li
+{
+
+  /*
+  position: relative;
+  left: 1.3em;*/
+  align-self: flex-start;
+  flex-basis: content;
+}
+
+
+/*
+.sales
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 6em;
+  gap: 100px;
+}
+.sales h2
+{
+  position: absolute;
+  left: 7em;
+  bottom: -0.80em;
+}
+.sales h2, .sales article
+{
+  position: relative;
+}
+.salebooks
+{
+  height: 600px;
+  width: 68.5em;
+  background-color: black;
+  border-radius: 15px;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-flow: row nowrap;
+  align-content: space-around;
+  top: 8em;
+  right: 64.8em;
+  gap: 30px;
+}
+.salebooks li
+{
+  position: relative;
+  right: -12em;
+  align-self: center;
+  flex-basis: content;
+}
+*/
+.sales li .colorsale
+{
+  border: 30px solid rgba(235,220,81,255);;
+  border-left: 10px;
+  border-top: 0;
+}
+.salebooks a
+{
+  text-decoration: none;
+}
+.salebooks a figcaption
+{
+  color: white;
+  font-family: 'Croissant One', cursive;
+  font-size: 1.5em;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.salebooks figcaption p:nth-of-type(1)
+{
+  color: white;
+  opacity:0;
+}
+.salebooks a:hover figcaption p:nth-of-type(1)
+{
+  opacity:1;
+}
+.salebooks a:hover figcaption p:nth-of-type(2)
+{
+  color: rgba(235,220,81,255);
+}
+.salebooks li a
+{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+.salebooks li img
+{
+  transform: scale(1.08);
+}
+.salebooks li:hover img
+{
+  transform: scale(1.1);
+}
+
+/* Книги на иностранном языке */
+.native
+{
+  gap: 3em;
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.nativebooks
+{
+    overflow-x: auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  top: 5px;
+  left: 4px;
+  gap: 30px;
+}
+.native article
+{
+  background-color: rgba(235,220,81,255);
+  padding-bottom: 4em;
+}
+.nativebooks li
+{
+  align-self: flex-start;
+  flex-basis: content;
+}
+.nativebooks li .colornat
+{
+  border: 30px solid white;
+  border-left: 10px;
+  border-top: 0;
+}
+.nativebooks li a
+{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+.nativebooks li img
+{
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+.nativebooks a
+{
+  text-decoration: none;
+}
+.nativebooks a figcaption
+{
+  color: black;
+  font-family: 'Croissant One', cursive;
+  font-size: 1.5em;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.nativebooks figcaption p:nth-of-type(1)
+{
+  color: black;
+}
+.nativebooks figcaption p:nth-of-type(1)
+{
+  opacity:0;
+  color: black;
+}
+.nativebooks a:hover figcaption p:nth-of-type(2)
+{
+  color: white;
+}
+.nativebooks a:hover figcaption p:nth-of-type(1)
+{
+  opacity:1;
+}
+.nativebooks li:hover img
+{
+  transform: scale(1.1);
+}
+
+ /* Подвал страницы */
+.footer
+{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+}
+.footer .row
+{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+}
+.footer .row a
+{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+}
+.footer .row a:hover
+{
+  color:#fff;
+}
+.footer .row ul
+{
+  width:100%;
+}
+.footer .row ul li
+{
+  display:inline-block;
+  margin:0px 30px;
+}
+.footer .row a i
+{
+  font-size:2em;
+  margin:0% 1%;
+}

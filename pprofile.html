@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookshelf</title>
+  <link rel="shortcut icon" href="bookicon.png" type="image/png">
+  <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body id="profile">
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/profile.js"></script>
+  <fieldset>
+    <div class="cube-container">
+      <div class="cube left-top"></div>
+      <div class="cube yellow right-center"></div>
+      <div class="cube white bottom"></div>
+    </div>
+    <form id="form1" action="index2.html" method="get" onsubmit="saveData()">
+      <legend><p><b>Информация</b></p></legend>
+      <label for="tel"><p><b>Введите телефон</b></p>
+        <input type="tel" required placeholder="+7XXXXXXXXXX" id="tel" pattern="^\+7\d{10}$"></label>
+      <label for="password"><p><b>Введите пароль</b></p>
+        <input type="password" required placeholder="минимум 6 символов" pattern=".{6,}" title="Минимум 6 символов" id="password"></label>
+      <button type="submit">Отправить</button>
+    </form>
+  </fieldset>
+  </style>
+
+</body>
+</html>

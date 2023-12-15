@@ -1,0 +1,37 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+
+.basket
+{
+  display: grid;
+  grid-template-areas:
+  "a b b"
+  "a b b"
+  "a b b";
+}
+
+.bsk-info
+{
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  border: 2px solid green;
+}
+.goods
+{
+  display: flex;
+  border: 2px solid red;
+}
+
+#k::after
+{
+
+}
+#c::before
+{
+
+}
