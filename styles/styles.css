@@ -106,6 +106,7 @@ main ul
 {
   width: 563.3px;
   height: 43.75em;
+  margin-right:2rem;
   position: relative;/*
   top: 5em;
   left: -18em;*/
@@ -383,16 +384,16 @@ main ul
   background-color: rgba(235,220,81,255);
   padding-bottom: 4em;
  position: relative;
-  top: 4em;
 
-   /*right: 0;*/
+  top: 4em;
+right:0;
+
 
 padding-left: 1em;
   height: 600px;
-  margin-left: 2rem;
+/*  margin-left: 2rem;*/
   overflow-x: scroll;
   border-radius: 15px;
-  width: 100%;
 
 }
 
@@ -401,6 +402,7 @@ padding-left: 1em;
     display: flex;
     position: relative;
   justify-content: space-between;
+
   top: 4em;
   gap: 1.5em;
 }
