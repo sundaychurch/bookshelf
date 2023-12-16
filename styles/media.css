@@ -165,7 +165,7 @@
     left: 3em;
   }
 
-  .native h2
+  .native h2, .new h2, .popular h2, .sales h2
   {
     position: relative;
     left: 0.25em;
