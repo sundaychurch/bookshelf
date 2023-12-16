@@ -102,7 +102,6 @@
     flex-direction: column;
     gap: 0;
   }
-
   #menutop li, #bskhrt
   {
     width: 100%;
@@ -112,52 +111,15 @@
     display: flex;
     flex-direction: column;
   }
-
-  /*
-  .newbooks
-  {
-    overflow: scroll;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -4em;
-  }*/
-
   .box, .box2
   {
     display: none;
   }
-  /*
-  .popular h2
-  {
-    position: relative;
-    left: 2em;
-  }/*
-  .popularbooks
-  {
-    position: relative;
-    width: 100%;
-    left: -19em;
-    margin-bottom: 2em;
-  }
-*/
-/*  .sales h2
-  {
-    left: 2.5em;
-  }*/
-/*
-  .salebooks
-  {
-    position: relative;
-    width: 100%;
-    right: 15em;
-
-  }*/
   .salebooks li
   {
     position: relative;
     left: 3em;
   }
-
   .native h2, .new h2, .popular h2, .sales h2
   {
     position: relative;
@@ -167,18 +129,17 @@
   {
     overflow: scroll;
   }
-
-  .footer {
+  .footer
+  {
     text-align: center;
     padding: 5%;
   }
-
-  .footer .row ul li {
+  .footer .row ul li
+  {
     display: block;
     margin: 10px 0px;
     text-align: center;
   }
-
   .footer .row a i {
     margin: 0% 3%;
   }

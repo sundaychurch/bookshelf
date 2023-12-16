@@ -11,12 +11,14 @@ body
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('rem.jpg'); /* Замените 'your-image-url.jpg' на ссылку на вашу картинку*/
+  background-image: url('rem.jpg');
   background-size: cover;
+  background-position: center;
   font-family: 'Croissant One', sans-serif;
-  overflow: hidden; /* Чтобы избежать прокрутки при размытии */
+  overflow: hidden;
 }
-body:before {
+body:before
+{
   content: "";
   position: fixed;
   top: 0;
@@ -25,11 +27,11 @@ body:before {
   height: 100%;
   background-image: url('rem.jpg');
   background-size: cover;
-  filter: blur(5px); /* Изначально без размытия */
-  transition: filter 0.3s ease-in-out; /* Анимация для плавного перехода размытия */
-  z-index: -2; /* Чтобы не перекрывать контент */
+  background-position: center;
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+  z-index: -2;
 }
-
 
 fieldset
 {
@@ -40,21 +42,21 @@ fieldset
   position: relative;
   width: 20em;
   height: 20em;
-  border: 2px solid #000; /* черная рамка */
+  border: 2px solid #000;
   border-radius: 10px;
-  background-color: #fff; /* белый цвет фона */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* тень */
-  transition: transform 0.3s ease-in-out; /* анимация для fieldset */
-  overflow: hidden; /* скрываем выход за границы рамки */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
 }
-fieldset:hover body:before {
-  filter: blur(5px); /* Измените значение по желанию для управления степенью размытия */
+fieldset:hover body:before
+{
+  filter: blur(5px);
   z-index: 2;
 }
-
 fieldset:hover
 {
-  transform: scale(1.05); /* увеличение размера при наведении курсора */
+  transform: scale(1.05);
   z-index: 3;
 }
 
@@ -62,7 +64,7 @@ legend
 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  text-align: center; /* выравнивание по центру */
+  text-align: center;
 }
 
 #form1
@@ -70,7 +72,6 @@ legend
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-
 }
 
 label
@@ -79,35 +80,33 @@ label
   flex-direction: column;
   align-items: center;
   z-index: 2;
-  color: #000; /* черный цвет текста */
+  color: black;
 }
 
 input
 {
   padding: 0.5em;
-  border: 2px solid #000; /* черная рамка */
-
+  border: 2px solid black;
   border-radius: 5px;
   outline: none;
-  transition: border-color 0.3s ease-in-out; /* анимация для input */
+  transition: border-color 0.3s ease-in-out;
 }
 input[type="tel"] {
   padding: 0.5em;
-  border: 2px solid #000;
+  border: 2px solid black;
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s ease-in-out;
 }
 
-input[type="tel"]:focus {
+input[type="tel"]:focus
+{
   border-color: rgba(235,220,81,255);
 }
-
-input[type="tel"]::placeholder {
-  color: #666; /* Цвет placeholder */
+input[type="tel"]::placeholder
+{
+  color: #666;
 }
-
-
 input:focus
 {
   border-color: rgba(235,220,81,255); /* желтая рамка при фокусе */
@@ -119,15 +118,15 @@ button
   padding: 0.5em 1em;
   border: none;
   border-radius: 5px;
-  background-color: #000; /* черный цвет кнопки */
-  color: #fff; /* белый цвет текста на кнопке */
+  background-color: black;
+  color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out; /* анимация для button */
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover
 {
-  background-color: rgba(235,220,81,255); /* желтый цвет кнопки при наведении курсора */
+  background-color: rgba(235,220,81,255);
 }
 
 .cube-container
@@ -145,17 +144,17 @@ button:hover
   width: 40px;
   height: 40px;
   margin: 5px;
-  background-color: #000; /* черный цвет куба */
+  background-color: black;
 }
 
 .cube.yellow
 {
-  background-color:rgba(235,220,81,255); /* желтый цвет куба */
+  background-color:rgba(235,220,81,255);
 }
 
 .cube.white
 {
-  background-color: rgba(235,220,81,255); /* белый цвет куба */
+  background-color: rgba(235,220,81,255);
 }
 
 .cube.left-top
@@ -185,20 +184,20 @@ button:hover
 @keyframes moveCubeTop
 {
   to {
-    transform: translateY(20px); /* движение вниз */
+    transform: translateY(20px);
   }
 }
 
 @keyframes moveCubeRight
 {
   to {
-    transform: translateX(20px); /* движение вправо */
+    transform: translateX(20px);
   }
 }
 
 @keyframes moveCubeBottom
 {
   to {
-    transform: translateY(-20px); /* движение вверх */
+    transform: translateY(-20px);
   }
 }
