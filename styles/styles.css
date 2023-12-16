@@ -203,7 +203,7 @@ main ul
   width: 563.3px;
   height: 43.75em;
   border-radius: 15px;
-  right: 6em;
+  right: 2em;
 }
 .box2
 {
@@ -231,7 +231,7 @@ main ul
 .box2 .square:nth-child(1)
 {
   top: -6%;
-  left: -5%;
+  left: -1%;
   width: 6.25em;
   height: 6.25em;
   background-color: rgba(235,220,81,255)
@@ -239,15 +239,15 @@ main ul
 .box2 .square:nth-child(2)
 {
   top: 30%;
-  left: 68%;
+  left: 81%;
   width: 6.875em;
   height: 6.875em;
   z-index: 2;
 }
 .box2 .square:nth-child(3)
 {
-  bottom: 2%;
-  left: -25%;
+  bottom: -2%;
+  left: -10%;
   width: 6.875em;
   height: 6.875em;
   z-index: 2;
@@ -267,7 +267,7 @@ main ul
   display: flex;
   width:100%;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .newbooks
@@ -284,6 +284,7 @@ main ul
 {
   background-color: rgba(235,220,81,255);
   padding-bottom: 4em;
+  padding-left: 10px;
 }
 .newbooks li
 {
@@ -383,21 +384,23 @@ main ul
   padding-bottom: 4em;
  position: relative;
   top: 4em;
-   right: 0;
-padding-left: 2em;
+
+   /*right: 0;*/
+
+padding-left: 1em;
   height: 600px;
   margin-left: 2rem;
   overflow-x: scroll;
   border-radius: 15px;
   width: 100%;
+
 }
 
 .popularbooks
 {
-
     display: flex;
     position: relative;
-    justify-content: space-between;
+  justify-content: space-between;
   top: 4em;
   gap: 1.5em;
 }
@@ -405,7 +408,11 @@ padding-left: 2em;
 {
   align-self: flex-start;
   flex-basis: content;
-}
+}/*
+.popularbooks li:nth-of-type(1)
+{
+  padding-left: 25em;
+}*/
 .popularbooks li .colorpop
 {
     border: 30px solid black;
@@ -460,7 +467,7 @@ padding-left: 2em;
   grid-template-areas:
   "label2 . ."
   "books2 books2 image2";
-  gap:6em;
+  /*gap:6em;
   /*width: 100%;
   display: flex;
   flex-direction: row;
@@ -474,24 +481,26 @@ padding-left: 2em;
   grid-area: books2;
   background-color: black;
   padding-bottom: 4em;
-  padding-left: 1em;
   position: relative;
   top: 4em;
-  right: 10em;
+  left:0;
+  padding-left:16px;
+  /*
+  right: 10em;/*
   margin-left: 10em;
   /*left: -22.25em*/;
   height: 600px;
   overflow-x: scroll;
   border-radius: 15px;
-  width: 100%;
+  width: 98%;
 
 }
 .sales h2
 {
   grid-area: label2;
-  padding-left: 7em;
+  padding-left: 6em;
   position: relative;
-  top: 1.6em;
+  top: 0.4em;
   /*position:relative;
   left: -5em;
   bottom: -0.80em;*/
@@ -608,12 +617,17 @@ padding-left: 2em;
 /* Книги на иностранном языке */
 .native
 {
-  margin-top: 5em;
+
   gap: 3em;
   display: flex;
   width:100%;
   flex-direction: column;
   margin-bottom: 2em;
+}
+.native h2
+{
+  position: relative;
+  top: -0.1em;
 }
 .nativebooks
 {
@@ -629,6 +643,7 @@ padding-left: 2em;
 {
   background-color: rgba(235,220,81,255);
   padding-bottom: 4em;
+  padding-left: 10px;
 }
 .nativebooks li
 {

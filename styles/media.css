@@ -4,12 +4,22 @@
   {
     margin-left: 0.01em;
   }
+  .new
+  {
+    margin-bottom: -2em;
+  }
  .popular
   {
     display: grid;
     grid-template-areas:
     "label . ."
     "books books books";
+    margin-bottom: 5em;
+  }
+  .popular h2
+  {
+    position: relative;
+    top: 1.2em;
   }
   .sales
   {
@@ -21,8 +31,7 @@
   }
   .sales h2
   {
-    position: relative;
-    left: -6.9em;
+    padding-left:0;
   }
   .popular article
   {
@@ -36,12 +45,14 @@
   }*/
   .sales article
   {
+    width: 100%;
     overflow-y:hidden;
   }
   .salebooks
   {
-      left: 0;
+        margin-left: -3em;
   }
+
   .menu-wrap
   {
     height: 5em;
@@ -151,14 +162,14 @@
   {
     left: 2.5em;
   }*/
-
+/*
   .salebooks
   {
     position: relative;
     width: 100%;
     right: 15em;
 
-  }
+  }*/
   .salebooks li
   {
     position: relative;
