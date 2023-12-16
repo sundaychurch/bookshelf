@@ -1,5 +1,5 @@
-@media (max-width: 985px) {
-
+@media (max-width: 985px)
+{
   .native h2, .new h2
   {
     margin-left: 0.01em;
@@ -10,6 +10,7 @@
   }
  .popular
   {
+    gap: 3em;
     display: grid;
     grid-template-areas:
     "label . ."
@@ -37,12 +38,7 @@
   {
     position:relative;
     margin-left: 0;
-  }/*
-  .popular h2
-  {
-    position: relative;
-    left: -9.3em;
-  }*/
+  }
   .sales article
   {
     width: 100%;
@@ -50,77 +46,63 @@
   }
   .salebooks
   {
-        margin-left: -3em;
+    margin-left: -3em;
   }
-
   .menu-wrap
   {
     height: 5em;
     width: 100%;
   }
-  /* Общий стиль для бургер-меню и скрытие навигации по умолчанию */
-  .menu-wrap nav {
+  .menu-wrap nav
+  {
     display: none;
-    transition: display 1.5s ease; /* Добавляем плавный переход с эффектом ease */
+    transition: display 1.5s ease;
   }
-
-  /* Отображение навигации при активном чекбоксе */
-  .menu-wrap input:checked + nav {
+  .menu-wrap input:checked + nav
+  {
     display: block;
-    background-color: black; /* Черный фон */
+    background-color: black;
     position: absolute;
-    top: 30px; /* Выберите нужное значение в зависимости от вашего дизайна */
-
+    top: 30px;
     width: 100%;
     z-index: 1;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
-    transition: display 2.5s ease; /* Добавляем плавный переход с эффектом ease */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: display 2.5s ease;
   }
-
-  /* Стилизация элементов меню */
-  .menu-wrap nav ul {
+  .menu-wrap nav ul
+  {
     padding: 0;
     list-style: none;
-    margin-top: 0; /* Убираем верхний отступ */
+    margin-top: 0;
   }
-
-  .menu-wrap nav li {
+  .menu-wrap nav li
+  {
     padding: 5px;
     text-align: center;
   }
-
-  .menu-wrap nav a {
+  .menu-wrap nav a
+  {
     text-decoration: none;
-    color: white; /* Белый цвет текста */
+    color: white;
   }
-
-  /* Иконка бургера */
-  .menu-icon {
+  .menu-icon
+  {
     cursor: pointer;
     font-size: 2em;
-    color: white; /* Белый цвет иконки */
+    color: white;
   }
-
-  /* Скрытие чекбокса */
-  #checkbox {
+  #checkbox
+  {
     display: none;
   }
-
-  #menutop {
+  #menutop
+  {
     font-size: 10px;
     display: flex;
     flex-direction: column;
     gap: 0;
   }
 
-  .popular
-  {
-    gap: 3em;
-    display: flex;
-    width:100%;
-    flex-direction: column;
-
-  }
   #menutop li, #bskhrt
   {
     width: 100%;

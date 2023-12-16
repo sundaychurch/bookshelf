@@ -68,3 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
        } else {alert("Товар уже в корзине!");}
      };
    });
+   document.addEventListener("DOMContentLoaded", function () {
+     document.addEventListener("keydown", function (event) {
+       // Проверяем, что нажата клавиша ESC (код 27)
+       if (event.keyCode === 27) {
+         // Выполняем переход на предыдущую страницу
+         history.back();
+       }
+     });
+   });
