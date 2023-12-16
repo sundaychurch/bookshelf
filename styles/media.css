@@ -50,7 +50,7 @@
   /* Общий стиль для бургер-меню и скрытие навигации по умолчанию */
   .menu-wrap nav {
     display: none;
-    transition: display 0.5s ease; /* Добавляем плавный переход с эффектом ease */
+    transition: display 1.5s ease; /* Добавляем плавный переход с эффектом ease */
   }
 
   /* Отображение навигации при активном чекбоксе */
@@ -58,12 +58,12 @@
     display: block;
     background-color: black; /* Черный фон */
     position: absolute;
-    top: 17px; /* Выберите нужное значение в зависимости от вашего дизайна */
+    top: 30px; /* Выберите нужное значение в зависимости от вашего дизайна */
 
     width: 100%;
     z-index: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
-    transition: display 0.5s ease; /* Добавляем плавный переход с эффектом ease */
+    transition: display 2.5s ease; /* Добавляем плавный переход с эффектом ease */
   }
 
   /* Стилизация элементов меню */
@@ -86,6 +86,7 @@
   /* Иконка бургера */
   .menu-icon {
     cursor: pointer;
+    font-size: 2em;
     color: white; /* Белый цвет иконки */
   }
 
