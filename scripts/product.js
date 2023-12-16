@@ -1,4 +1,13 @@
   document.addEventListener("DOMContentLoaded", function() {
+
+        localStorage.setItem('previousPage', document.referrer);
+
+    // Получаем URL предыдущей страницы из localStorage
+    var previousPage = localStorage.getItem('previousPage');
+    var bskhrtPresent = localStorage.getItem('bskhrtPresent');
+
+// Получаем URL предыдущей страницы из localStorage
+var previousPage = localStorage.getItem('previousPage');
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const productName = urlParams.get("title") || "Название книги";
@@ -11,11 +20,18 @@
     document.getElementById("productDescription").innerText = productDescription;
 
     document.getElementById("buyButton").addEventListener("click", function() {
+      if(bskhrtPresent === 'true')
+      {
       // Вызываем функцию для добавления товара в корзину
       addItemToCart(productName, productPrice, productImage, productDescription);
+      }
+    else alert("Для начала войдите в аккаунт!");
     });
     document.getElementById("addToFavoriteButton").addEventListener("click", function() {
+      if(bskhrtPresent === 'true')
       alert(`Вы добавили книгу "${productName}" в избранное!`);
+      else
+        alert("Для начала войдите в аккаунт!");
     });
     // Функция для добавления товара в корзину
     function addItemToCart(productName, productPrice, productImage, productDescription) {
@@ -34,6 +50,8 @@
       alert(`Товар "${productName}" добавлен в корзину!`);
     }
     document.getElementById("addToFavoriteButton").addEventListener("click", function() {
+      if(bskhrtPresent === 'true')
+      {
       // Получаем текущий список избранных товаров из локального хранилища
       const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
       // Добавляем текущий товар в избранное
@@ -46,5 +64,6 @@
       favorites.push(newItem);
       // Обновляем локальное хранилище
       localStorage.setItem("favorites", JSON.stringify(favorites));
+    }
     });
   });

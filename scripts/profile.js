@@ -12,6 +12,7 @@ function saveData() {
     // Сохраняем данные в sessionStorage
     sessionStorage.setItem('tel', telValue);
     sessionStorage.setItem('password', passwordValue);
+    localStorage.setItem('bskhrtPresent', true);
   } else {
     alert('Некорректный номер телефона или пароль!');
     event.preventDefault(); // Отменяем отправку формы, если данные некорректны
