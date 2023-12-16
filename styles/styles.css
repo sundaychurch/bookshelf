@@ -105,7 +105,7 @@ main ul
 .box
 {
   width: 563.3px;
-  height: 700px;
+  height: 43.75em;
   position: relative;/*
   top: 5em;
   left: -18em;*/
@@ -269,6 +269,7 @@ main ul
   flex-direction: column;
   margin-bottom: 2em;
 }
+
 .newbooks
 {
     overflow-x: auto;
@@ -356,13 +357,15 @@ main ul
   display: grid;
   grid-template-areas:
   ". . label"
-  "image books books"
+  "image books books";
+  margin-bottom: 1em;
 }
 .popular h2
 {
+  padding-right: 6.5em;
   grid-area: label;
   position: relative;
-  top: 10%;
+  top: 0.3em;
 }
 .popular .box
 {
@@ -400,8 +403,6 @@ padding-left: 2em;
 }
 .popularbooks li
 {
-
-
   align-self: flex-start;
   flex-basis: content;
 }
@@ -457,7 +458,7 @@ padding-left: 2em;
 {
   display: grid;
   grid-template-areas:
-  ". . label2"
+  "label2 . ."
   "books2 books2 image2";
   gap:6em;
   /*width: 100%;
@@ -466,14 +467,14 @@ padding-left: 2em;
   justify-content: flex-start;
   margin-bottom: 6em;
   gap: 100px;*/
-  margin-bottom: 5%;
+  margin-bottom: 2em;
 }
 .sales article
 {
   grid-area: books2;
   background-color: black;
   padding-bottom: 4em;
-  padding-left: 2em;
+  padding-left: 1em;
   position: relative;
   top: 4em;
   right: 10em;
@@ -488,12 +489,12 @@ padding-left: 2em;
 .sales h2
 {
   grid-area: label2;
-  /*
+  padding-left: 7em;
   position: relative;
-  left: 17em;*/
-  position:relative;
+  top: 1.6em;
+  /*position:relative;
   left: -5em;
-  bottom: -0.80em;
+  bottom: -0.80em;*/
 }
 .salebooks
 {
@@ -506,7 +507,6 @@ padding-left: 2em;
 }
 .salebooks li
 {
-
   /*
   position: relative;
   left: 1.3em;*/
@@ -608,6 +608,7 @@ padding-left: 2em;
 /* Книги на иностранном языке */
 .native
 {
+  margin-top: 5em;
   gap: 3em;
   display: flex;
   width:100%;

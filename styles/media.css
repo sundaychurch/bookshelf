@@ -1,5 +1,10 @@
-@media (max-width: 768px) {
-  .popular
+@media (max-width: 985px) {
+
+  .native h2, .new h2
+  {
+    margin-left: 0.01em;
+  }
+ .popular
   {
     display: grid;
     grid-template-areas:
@@ -12,13 +17,23 @@
     grid-template-areas:
     "label2 . ."
     "books2 books2 books2";
-    margin-bottom: 5em;
+    margin-bottom: 7em;
+  }
+  .sales h2
+  {
+    position: relative;
+    left: -6.9em;
   }
   .popular article
   {
     position:relative;
     margin-left: 0;
-  }
+  }/*
+  .popular h2
+  {
+    position: relative;
+    left: -9.3em;
+  }*/
   .sales article
   {
     overflow-y:hidden;
@@ -30,7 +45,7 @@
   .menu-wrap
   {
     height: 5em;
-    width: 400px;
+    width: 100%;
   }
   /* Общий стиль для бургер-меню и скрытие навигации по умолчанию */
   .menu-wrap nav {
@@ -45,7 +60,7 @@
     position: absolute;
     top: 17px; /* Выберите нужное значение в зависимости от вашего дизайна */
 
-    width: 415px;
+    width: 100%;
     z-index: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
     transition: display 0.5s ease; /* Добавляем плавный переход с эффектом ease */
@@ -92,22 +107,18 @@
     display: flex;
     width:100%;
     flex-direction: column;
-    margin-bottom: 2em;
+
   }
   #menutop li, #bskhrt
   {
-    width: 400px;
+    width: 100%;
   }
   .bsk
   {
     display: flex;
     flex-direction: column;
   }
-  .new h2
-  {
-    position: relative;
-    left: 2.5em;
-  }
+
   /*
   .newbooks
   {
@@ -135,17 +146,17 @@
     margin-bottom: 2em;
   }
 */
-  .sales h2
+/*  .sales h2
   {
     left: 2.5em;
-  }
+  }*/
 
   .salebooks
   {
     position: relative;
     width: 100%;
     right: 15em;
-    margin-bottom: 5em;
+
   }
   .salebooks li
   {
@@ -177,4 +188,4 @@
   .footer .row a i {
     margin: 0% 3%;
   }
-  }
+}
