@@ -1,19 +1,18 @@
-
-
 @media (max-width: 768px) {
   .popular
   {
     display: grid;
     grid-template-areas:
-    ". label ."
+    "label . ."
     "books books books";
   }
   .sales
   {
     display: grid;
     grid-template-areas:
-    ". label2 ."
+    "label2 . ."
     "books2 books2 books2";
+    margin-bottom: 5em;
   }
   .popular article
   {

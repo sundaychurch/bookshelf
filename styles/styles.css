@@ -9,7 +9,6 @@
 
 body
 {
-
   width: 100%;
 }
 
@@ -356,12 +355,14 @@ main ul
 {
   display: grid;
   grid-template-areas:
-  ". label ."
+  ". . label"
   "image books books"
 }
 .popular h2
 {
   grid-area: label;
+  position: relative;
+  top: 10%;
 }
 .popular .box
 {
@@ -387,13 +388,7 @@ padding-left: 2em;
   border-radius: 15px;
   width: 100%;
 }
-.popular h2
-{
-  /*
-  position: relative;
-  left: 17em;*/
-  bottom: -0.80em;
-}
+
 .popularbooks
 {
 
@@ -462,7 +457,7 @@ padding-left: 2em;
 {
   display: grid;
   grid-template-areas:
-  ". label2 ."
+  ". . label2"
   "books2 books2 image2";
   gap:6em;
   /*width: 100%;
@@ -471,6 +466,7 @@ padding-left: 2em;
   justify-content: flex-start;
   margin-bottom: 6em;
   gap: 100px;*/
+  margin-bottom: 5%;
 }
 .sales article
 {
@@ -495,6 +491,8 @@ padding-left: 2em;
   /*
   position: relative;
   left: 17em;*/
+  position:relative;
+  left: -5em;
   bottom: -0.80em;
 }
 .salebooks
